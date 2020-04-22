@@ -1,0 +1,4 @@
+version: '3'
+networks:
+  # Internal Docker network used by nginx to reach web dockers
+  nginx-net:
