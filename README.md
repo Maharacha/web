@@ -1,7 +1,5 @@
-docker-compose -f docker-compose.yml -f nginx/docker-compose.yml -f finedr/docker-compose.yml build internal-
-nginx
-
-docker-compose -f docker-compose.yml -f nginx/docker-compose.yml -f finedr/docker-compose.yml up -d internal-finedr
+docker-compose -f docker-compose.yml -f nginx/docker-compose.yml -f finedr/docker-compose.yml -f owncloud/docker-compose.yml build internal-nginx
+docker-compose -f docker-compose.yml -f nginx/docker-compose.yml -f finedr/docker-compose.yml -f owncloud/docker-compose.yml up -d internal-nginx
 
 docker logs --tail 50 --follow --timestamps nginx
 
